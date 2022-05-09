@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<body>
+		<h1>Results page for '{{ search_term }}' by {{method}}</h1>
+		{#<form action="http://127.0.0.1:5000" method="POST">
+			<p><button type="submit" name="gohome">Go home</button></p>
+		</form>#}
+		<table border=1>
+			<tr>
+				<th>Name</th>
+				<th>Description</th>
+				{% if method == "scraping" %}
+				<th>Tags</th>
+				{% endif %} 
+				<th>Stars</th>
+				<th>Language</th>
+				<th>License</th>
+				<th>Last updated</th>
+				<th>Issues</th>
+			{% for repo_dict in items_list %}
+				<tr>
+				{% for key in repo_dict %}
+						<td style="width:200px;height:80px"> {{repo_dict[key]}} </td>
+				{% endfor %}
+				</tr>
+			{% endfor %}
+	</body>
+</html>

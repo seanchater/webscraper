@@ -1,0 +1,18 @@
+<html>
+	<body>
+		<h1>Enter a term to search GitHub for:</h1>
+		<form method="POST" name="form">
+			<p><input type="text" name="search_term" /></p>
+			<p>
+				<button type="submit"
+					formaction="http://127.0.0.1:5000/scraper"	formmethod="POST" />
+					Scraped results 
+				</button>
+				<button type="submit"
+					formaction="http://127.0.0.1:5000/api" formmethod="POST" />
+					API results 
+				</button>
+			</p>
+		</form>
+	</body>
+</html>
