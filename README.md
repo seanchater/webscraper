@@ -9,6 +9,8 @@ permissions enabled.
 ## Installation of modules:
 Make sure pip is installed to run the following script!
 
+If you do not have python3 already installed then uncomment the first line of the script
+
 Run the bash script `install.sh` to install the required modules.
 
 ## Run:
